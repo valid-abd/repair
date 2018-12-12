@@ -1,0 +1,8 @@
+@inport '_fonts.scss' {}body {
+  font-family: 'Museo Sans Light', sans-serif;
+}
+
+h1 {
+  background-color: #000;
+}
+/*# sourceMappingURL=style.css.map */
