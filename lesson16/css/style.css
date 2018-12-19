@@ -336,7 +336,7 @@ template {
   border-radius: 10px;
   background-color: #ffd200; }
   .button:hover {
-    background-color: lighter(#ffd200, 10%);
+    background-color: #ffdb33;
     cursor: pointer; }
   .button:focus {
     outline: none; }
@@ -376,7 +376,7 @@ template {
   .header-text__phone {
     display: block;
     text-decoration: none;
-    color: #333;
+    color: #333333;
     font-family: 'Museo Sans Bold', sans-serif;
     font-size: 20px; }
 
