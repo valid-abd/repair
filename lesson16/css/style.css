@@ -453,6 +453,8 @@ template {
   .form__input {
     width: 270px;
     margin-bottom: 30px; }
+    .form__input:focus {
+      outline: none; }
     .form__input:first-child {
       margin-right: 30px; }
   .form__button {
