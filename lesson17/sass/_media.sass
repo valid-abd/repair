@@ -38,7 +38,7 @@
             margin-bottom: 20px
         &__input
             &:first-child
-                margin: 30px
+                // margin: 30px
         &__managar
             &-discn
                 margin: auto
@@ -65,7 +65,8 @@
     .form
         &__input
             &:first-child
-                margin: 30px
+                margin-right: auto
+                margin-left: auto
         &__managar
             flex-direction: column
             &-discn
@@ -76,3 +77,9 @@
                     margin: auto
                 &__text
                     margin-top: 10px
+@media (max-width: 380px)
+    .showmobile 
+        display: none
+    .header
+        &-logo
+            width: 49%

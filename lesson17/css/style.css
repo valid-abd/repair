@@ -557,8 +557,6 @@ img {
       font-size: 20px; }
     .form__subtitle {
       margin-bottom: 20px; }
-    .form__input:first-child {
-      margin: 30px; }
     .form__managar-discn {
       margin: auto; }
     .form__managar-info {
@@ -579,7 +577,8 @@ img {
   .feedback {
     padding: 45px 0; }
   .form__input:first-child {
-    margin: 30px; }
+    margin-right: auto;
+    margin-left: auto; }
   .form__managar {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -596,4 +595,10 @@ img {
         margin: auto; }
       .form__managar-info__text {
         margin-top: 10px; } }
+
+@media (max-width: 380px) {
+  .showmobile {
+    display: none; }
+  .header-logo {
+    width: 49%; } }
 /*# sourceMappingURL=style.css.map */
