@@ -1002,11 +1002,17 @@ img {
 }
 
 @media (max-width: 380px) {
-  .showmobile {
-    display: none;
-  }
   .header-logo {
     width: 49%;
+  }
+  .header-text__contacts {
+    margin-right: 6px;
+  }
+  .header-text__city {
+    font-size: 10px;
+  }
+  .header-text__phone {
+    font-size: 11px;
   }
   .modal__form-title {
     font-size: 20px;
