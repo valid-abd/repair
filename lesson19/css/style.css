@@ -734,15 +734,12 @@ template {
 }
 
 .modal__discr-roster {
-  padding-left: 17px;
-  font-family: 'Museo Sans Light', sans-serif;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 25px;
-  margin-top: 8px;
+  color: #ffd200;
+  font-family: 'Museo Sans Bold', sans-serif;
 }
 
 .modal__discr-roster__text {
+  color: #333333;
   font-family: 'Museo Sans Light', sans-serif;
   font-size: 14px;
   font-weight: 400;
