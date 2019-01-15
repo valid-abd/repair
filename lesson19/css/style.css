@@ -1002,6 +1002,9 @@ img {
 }
 
 @media (max-width: 380px) {
+  .bnt-xs {
+    display: none;
+  }
   .header-logo {
     width: 49%;
   }
