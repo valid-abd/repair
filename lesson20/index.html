@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lesson 19</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/slick.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-wrap">
+      <div class="header-logo">
+        <img src="img/logo.jpg" alt="error 404"> 
+      </div>
+      <div class="header-text">
+        <div class="header-text__contacts">
+          <span class="header-text__city">Калуга, Москва, МО</span>
+          <a class="header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31</a>
+        </div>
+        <!-- появление кнопки при маленьком экране <=576px  -->
+        <a href="tel:+74954225131"  class="showmobile">
+            <div class="form__managar-info__img form__managar-info__img-4 main-advantages__img" id="button-callback1" ></div>
+        </a>
+
+        <div class="header-text__button">
+          <button class="button" id="button-callback">Перезвоните <span class="hidden-xs">мне</span></button>
+        </div>
+      </div>
+    </div> 
+  </header>
+
+  <div class="main">
+    <div class="container">
+      <div class="main-wrap">
+        <div class="main-text">
+          <h1 class="main-text__title">
+            Внутренняя отделка 
+            помещений "под ключ"
+            <span>
+              с гарантией качества, прописанной в&nbsp;договоре
+            </span>
+          </h1>
+          <div class="main-advantages">
+            <div class="main-advantages__item">
+              <div class="main-advantages__img main-advantages__img-1"></div>
+              <div class="main-advantages__text">
+                Точно соблюдаем сроки 
+              </div>
+            </div><!-- main-advantages__item -->
+            
+            <div class="main-advantages__item">
+              <div class="main-advantages__img main-advantages__img-2"></div>
+              <div class="main-advantages__text">
+                Рассчитаем смету на работы
+                и материалы в день обращения                
+              </div>
+            </div><!-- main-advantages__item -->
+            <div class="main-advantages__item">
+              <div class="main-advantages__img main-advantages__img-3"></div>
+              <div class="main-advantages__text">
+                Предложим более 100 вариантов 
+                исполнения дизайна Вашего жилья
+              </div>
+            </div><!-- main-advantages__item -->
+          </div>
+          
+          
+        </div>
+        <div class="main-image">
+          <img src="img/main/apartment.png" alt="План схема">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="feedback">
+    <div class="container">
+      <div class="form">
+        <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
+          <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
+          <form action="#">
+            <input type="text" class="input input-name form__input" placeholder="Ваше имя" required>
+            <input type="tel" class="input input-tel form__input" placeholder="Ваш телефон" required>
+            <button type="submit" class="button form__button">Получить бесплатный <span class="bnt-xs">дизайн-</span>проект</button>
+          </form>
+          <div class="form__managar">
+            <div class="form__managar-discn">Наш менеджер перезвонит Вам в течение 60 секунд</div>
+            <div class="form__managar-info">
+              <!-- <a href="+74954225131"> -->
+                  <div class="form__managar-info__img form__managar-info__img-4 main-advantages__img "></div>
+              <!-- </a> -->
+            <div class="form__managar-info__text">
+              или перезвоните нам сами
+              <a class="form__managar-info__phone header-text__phone" href="tel:+74954225131">+7 (495) 42-251-31 <img src="" alt=""></a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal" id="modal-callback">
+
+    <div class="modal__dialog">
+
+      <div class="modal__price">  <!--price-->
+
+        <div class="modal__room">
+
+          <div class=" modal__room-block">
+            <div class="modal__room-block__img modal__room-block__img-1">
+              <img src="" alt="">
+            </div>
+            <div class="modal__room-block__desc">
+             Ванная комната
+              <hr class="modal__room-block__desc_line">
+              <div class="modal__room-block__desc-value">
+                135*150 - <span class="modal__room-block__desc-value_700">31 000 руб.</span> <br>
+                170*170 - <span class="modal__room-block__desc-value_700">43 000 руб.</span>
+              </div>
+            </div>
+            
+          </div><!--room__block-->
+          
+          <div class="modal__room-block">
+            <div class="modal__room-block__img modal__room-block__img-2">
+              <img src="" alt="">
+            </div>
+            <div class="modal__room-block__desc">
+              Туалет
+              <hr class="modal__room-block__desc_line">
+              <div class="modal__room-block__desc-value">
+                135*70 - <span class="modal__room-block__desc-value_700">14 000 руб.</span>
+              </div>
+            </div>
+            
+            
+          </div><!--room__block-->
+
+          <div class="modal__room-block">
+            <div class="modal__room-block__img modal__room-block__img-3">
+              <img src="" alt="">
+            </div>
+            <div class="modal__room-block__desc">
+              Совмещенный санузел
+              <hr class="modal__room-block__desc_line">
+              <div class="modal__room-block__desc-value">
+                170*210 - <span class="modal__room-block__desc-value_700">54 000 руб.</span>
+              </div>
+            </div>
+           
+            
+          </div><!--modal__room-block__-->
+
+        </div> <!--modal__room-->
+
+        <div class="modal__discr">
+
+          <h2 class="modal__discr-header">В стоимость работ входит</h2>
+
+          <ul class="modal__discr-roster">
+            <li><span class="modal__discr-roster__text">Демонтаж старого покрытия стен и пола</span></li>
+            <li><span class="modal__discr-roster__text">Выравнивание стен гипсовыми составами</span></li>
+            <li><span class="modal__discr-roster__text">Грунтовка стен и пола антисептиком, бетоноконтактом</span></li>
+            <li><span class="modal__discr-roster__text">Монтаж кафельной плитки на полу и стенах</span></li>
+            <li><span class="modal__discr-roster__text">Установка реечного или натяжного потолка, светильников</span></li>
+            <li><span class="modal__discr-roster__text">Монтаж двери с коробкой</span></li>
+          </ul><!--discr-roster-->
+          
+        </div><!-- modal__discr -->
+      
+      </div> <!--price-->
+
+      <div class="modal__close">&#10006;</div>   <!-- крестик -->
+     
+      <div class="modal__form">
+        <h2 class="modal__form-title">Узнайте точную стоимость ремонта по телефону!</h2>
+        <span class="modal__form-subtitle">Заполните поля ниже - мы свяжемся с&nbsp;Вами</span>
+        <form class="modal__form_login" action="#">
+          <input type="text" class="modal__form-input modal__form-input_name input input-name form__input" name="user_name" placeholder="Ваше имя" required>
+          <input type="text" class="modal__form-input modal__form-input_tel input input-tel form__input" name="user_phone" placeholder="Ваш телефон" required>
+          <button   type="submit" class="modal__form-button button form__button">Узнать стоимость</button>
+        </form>
+        <div class="modal__form-manager form__managar">
+          <span class="modal__form-manager__text form__managar-info__text ">Или Вы можете перезвонить нам сами по телефону:</span> 
+          <a class="modal__form-manager__phone header-text__phone" href="tel:+78182425131">+7 (8182) 42-51-31<img src="" alt=""></a>
+        </div>
+        
+      </div>
+    </div>
+
+    
+
+  </div> <!--modal__dialog-->
+
+  
+  <script>
+    var button1 = document.querySelector('#button-callback1');
+    var button = document.querySelector('#button-callback');
+    var modal = document.querySelector('#modal-callback');
+    var close = document.querySelector('.modal__close');
+
+    button1.addEventListener('click', function () {
+    modal.classList.toggle('modal_visible');
+    }); 
+    button.addEventListener('click', function () {
+    modal.classList.toggle('modal_visible');
+    }); 
+    close.addEventListener('click', function () {
+    modal.classList.toggle('modal_visible');
+    });
+  </script>
+
+<!--слайд -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="/js/slick.min.js"></script>
+  <script>
+      $(document).ready(function () {
+          $('.slider').slick({
+            slidesToShow: 3, /*кол слайдов*/
+            slidesToScroll: 1, /*перелистывать слайдов*/
+            nextArrow: '<div class="arrow arrow_right"></div>', /*путь для кнопки*/
+            prevArrow: '<div class="arrow arrow_left"></div>',  /*путь для кнопки*/
+            responsive: [
+              {
+                breakpoint: 1200,
+                settings: {
+                  slidesToShow: 3,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 1024,
+                settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1
+                }
+              },
+              {
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+                }
+              }
+              // You can unslick at a given breakpoint now by adding:
+              // settings: "unslick"
+              // instead of a settings object
+            ] 
+        });
+      });
+  </script>
+  <!--слайд -->
+
+  <section class="portfolio">
+    <div class="container">
+      <h2 class="section-title section-title_center">
+        Работая с 2007 года, <br>
+        мы сделали 500 ремонтов <span class="sectn-xs">в квартирах и домах</span>
+      </h2>
+      <div class="slider">
+        <div class="slider__item">
+          <img src="img/slider/room1.png" alt="">
+        </div>
+        <div class="slider__item">
+          <img src="img/slider/room2.png" alt="">
+        </div>
+        <div class="slider__item">
+          <img src="img/slider/room3.png" alt="">
+        </div>
+        <div class="slider__item">
+          <img src="img/slider/room1.png" alt="">
+        </div>
+        <div class="slider__item">
+          <img src="img/slider/room2.png" alt="">
+        </div>
+        <div class="slider__item">
+          <img src="img/slider/room3.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

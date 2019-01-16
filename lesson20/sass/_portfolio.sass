@@ -1,0 +1,30 @@
+.portfolio
+	background-color: $light-bg-color
+	padding: 100px 0
+	height: 740px
+.section
+	&-title
+		font-size: 30px
+.slider
+	&__item
+		text-align: center
+		img
+			margin: auto
+.arrow
+		width: 45px
+		height: 19px
+		position: absolute
+		bottom: -68px
+		&:hover
+			cursor: pointer
+		&_right
+			left: 50% 
+			background: url('../img/slider/right-arrow.png') no-repeat center
+			background-size: 100%
+			transform: translate(15px)
+		&_left
+			left: 50% 
+			transform: translateX(-45px)
+			margin-left: -15px
+			background: url('../img/slider/left-arrow.png') no-repeat center
+			background-size: 100%
