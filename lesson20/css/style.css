@@ -834,13 +834,19 @@ template {
 }
 
 .portfolio {
+  padding-top: 100px;
+  padding-bottom: 187px;
+  background: url("../img/logo.png") no-repeat center;
   background-color: #f5f5f5;
-  padding: 100px 0;
-  height: 740px;
+  background-position-x: -37%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .section-title {
   font-size: 30px;
+  margin-bottom: 100px;
 }
 
 .slider__item {
@@ -965,6 +971,9 @@ img {
   }
   .modal__form_login {
     width: 80%;
+  }
+  .portfolio {
+    background: #f5f5f5;
   }
 }
 

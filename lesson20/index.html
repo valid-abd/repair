@@ -12,7 +12,7 @@
   <header class="header">
     <div class="container header-wrap">
       <div class="header-logo">
-        <img src="img/logo.jpg" alt="error 404"> 
+        <img src="/img/header/logo.png" alt="error 404"> 
       </div>
       <div class="header-text">
         <div class="header-text__contacts">
@@ -80,9 +80,9 @@
       <div class="form">
         <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
           <span class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
-          <form action="#">
-            <input type="text" class="input input-name form__input" placeholder="Ваше имя" required>
-            <input type="tel" class="input input-tel form__input" placeholder="Ваш телефон" required>
+          <form action="#" class="js-ajax">
+            <input type="text" name="fio" class="input input-name form__input" placeholder="Ваше имя" required>
+            <input type="tel" name="phone" class="input input-tel form__input" placeholder="Ваш телефон" required>
             <button type="submit" class="button form__button">Получить бесплатный <span class="bnt-xs">дизайн-</span>проект</button>
           </form>
           <div class="form__managar">
@@ -246,10 +246,24 @@
                   slidesToScroll: 1
                 }
               }
-              // You can unslick at a given breakpoint now by adding:
-              // settings: "unslick"
-              // instead of a settings object
             ] 
+        });
+        $('.js-ajax').on('submit', function(){
+          // var fioVal = $('[name = fio]').val(),
+          //     phoneVal = $('[name = phone]').val();
+          var data = $('.js-ajax').serialize();
+          console.log( маладца);
+          $.ajax({
+            url: './php/send.php',
+            data:{fio:fioVal, phone:phoneVal},
+            success: function (data) {
+              if(data == 1)
+                alert("Сообщение доставлено");
+              else
+                alert(" Проблемы на сторроне сервера! ");
+            }
+          });
+          return false;
         });
       });
   </script>
