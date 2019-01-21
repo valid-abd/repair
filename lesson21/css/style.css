@@ -993,6 +993,7 @@ template {
 .consult-form__input {
   width: 370px;
   height: 65px;
+  outline: none;
 }
 
 .consult-form__phone {
@@ -1098,7 +1099,7 @@ img {
     width: 100%;
   }
   .modal__form_login {
-    width: 80%;
+    width: 100%;
   }
   .portfolio {
     background: #f5f5f5;
@@ -1287,14 +1288,17 @@ img {
   .modal__form-title {
     font-size: 20px;
   }
+  .portfolio {
+    padding-top: 55px;
+  }
   .section-title {
     font-size: 22px;
   }
   .consult-form__input {
-    width: 75%;
+    width: 90%;
   }
   .consult-form__button {
-    width: 75%;
+    width: 90%;
   }
   .consult-header {
     margin-bottom: 35px;
