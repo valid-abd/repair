@@ -1,0 +1,49 @@
+.footer
+	display: flex
+	.map
+		flex-basis: 55%
+		min-height: 640px
+		background-color: #fff
+.contacts
+	padding-top: 91px
+	padding-left: 134px
+	&-title
+		max-width: 297px
+		font-size: 22px
+		line-height: 33px
+		+bold
+	&-info
+		max-width: 193px
+		margin-top: 89px
+		height: 297px
+	&-item
+		margin-bottom: 28px
+		display: flex
+		&__img
+			background-repeat: no-repeat
+			width: 27px
+			height: 20px
+			margin-right: 14px
+			margin-top: 8px
+			&-1
+				background-image: url('../img/footer/footer-map.png') 
+				margin-right: 25px
+			&-2
+				background-image: url('../img/footer/footer-clock.png')
+			&-3
+				background-image: url('../img/footer/footer-phone.png')
+		&__text
+			font-size: 16px
+			line-height: 26px
+			& span
+				+bold
+				display: block
+		&__phone
+			font-size: 16px
+			line-height: 26px
+			+bold
+			text-decoration: none
+			color: $text-color
+			display: block
+
+			
