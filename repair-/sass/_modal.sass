@@ -1,0 +1,134 @@
+.modal
+	position: fixed
+	width: 100%
+	height: 100%
+	background-color: rgba(#000, 0.52)
+	left: 0
+	top: 0
+	z-index: 99
+	display: none
+	&_visible
+		display: flex
+	&__dialog
+		width: 1170px
+		height: 674px
+		background-color: #ffffff
+		margin: auto
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+	&__close
+		position: absolute
+		top: 15px
+		right: 15px
+		&:hover
+			cursor: pointer
+	&__price
+		width: 600px
+		height: 674px
+		padding-top: 80px
+		padding-left: 79px
+		background-color: #f7f7f7
+	&__room
+		display: flex
+		flex-direction: column
+		&-block
+			display: flex
+			margin: 0 0 15px
+			align-items: center
+			&__img
+				width: 120px
+				height: 85px
+				margin-right: 29px
+				&-1 
+					background-image: url('../img/modal/bathroom.png')
+				&-2 
+					background-image: url('../img/modal/restroom.png')
+				&-3 
+					background-image: url('../img/modal/combined.png')
+			&__desc
+				font-size: 16px
+				font-weight: 400
+				+medium
+				color: $modal-header-color
+				&_line
+					width: 42px
+					height: 2px
+					background-color: $primary-color
+					border: none
+					margin: 9px 0 12px 0
+				&-value
+					font-size: 16px
+					font-weight: 400
+					line-height: 22px
+					+light
+					&_700
+						+bold
+	&__discr
+		margin-top: 22px
+		&-header
+			+bold
+			font-size: 14px
+			font-weight: 400
+			line-height: 45px		
+			color: $modal-header-color
+		&-roster 
+				color: $primary-color
+				+bold
+				&__text
+					color: $text-color
+					+light
+					font-size: 14px
+					font-weight: 400
+					line-height: 25px
+	&__form
+		width: 570px
+		height: 674px
+		background-color: #ffffff
+		display: flex
+		flex-direction: column
+		align-items: center
+		&_login
+			display: flex
+			flex-direction: column
+			align-items: center
+		&-title
+			width: 291px
+			font-size: 22px
+			font-weight: 400
+			line-height: 33px
+			text-align: center
+			margin-top: 73px
+			+bold
+			margin-bottom: 0
+		&-subtitle
+			font-size: 16px
+			font-weight: 400
+			line-height: 35px
+			margin: 39px
+		&-input
+			width: 370px
+			margin-bottom: 15px
+			&_name
+				&:first-child
+					margin-right: 0
+		&-button
+			// width: 368px
+			margin: 12px
+		&-manager
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin: 0
+			&__text
+				max-width: 275px
+				text-align: center
+				margin: 12px
+				line-height: 20px
+			&__phone
+				font-size: 24px
+				font-weight: 400
+				line-height: 24px
+
+	
