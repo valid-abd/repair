@@ -857,7 +857,10 @@ template {
 
 .slider__item {
   text-align: center;
-  outline: none;
+}
+
+.slider__item:hover {
+  outline: 0;
 }
 
 .slider__item img {
@@ -1637,6 +1640,9 @@ img {
   }
   .main-text__title {
     text-align: center;
+  }
+  .main-image {
+    margin-left: 18px;
   }
   .form {
     margin: auto;
