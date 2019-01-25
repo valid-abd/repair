@@ -433,13 +433,13 @@ template {
 
 .main {
   background-color: #f5f5f5;
-  padding: 60px 0;
 }
 
 .main-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  padding: 60px 0;
 }
 
 .main-text {
@@ -464,6 +464,10 @@ template {
 .main-image {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
+  z-index: 3;
+  position: absolute;
+  float: right;
+  left: 49%;
 }
 
 .main-advantages {
@@ -512,7 +516,9 @@ template {
 
 .feedback {
   padding: 94px 0;
-  background: url("../img/feedback/feedback-bg.jpg") no-repeat center left 700px;
+  background: url("../img/feedback/feedback-bg.jpg");
+  background-position-x: 100%;
+  background-repeat: no-repeat;
   background-size: contain;
   position: relative;
   z-index: 1;
@@ -743,7 +749,7 @@ template {
   font-family: 'Museo Sans Light', sans-serif;
   font-size: 14px;
   font-weight: 400;
-  line-height: 25px;
+  line-height: 28px;
 }
 
 .modal__form {
@@ -851,6 +857,7 @@ template {
 
 .slider__item {
   text-align: center;
+  outline: none;
 }
 
 .slider__item img {
@@ -1277,6 +1284,108 @@ template {
   display: block;
 }
 
+.service-title {
+  font-size: 32px;
+  line-height: 50px;
+  text-align: center;
+  padding: 99px 0;
+  background-color: #ffd200;
+}
+
+.service-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 100px;
+  padding-bottom: 143px;
+}
+
+.service-block__discr {
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.service-block__img {
+  max-width: 370px;
+  height: 411px;
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: 100% auto;
+  padding: 25px;
+  margin-bottom: 20px;
+}
+
+.service-block__img-1 {
+  background-image: url("../img/service/service-3.png");
+}
+
+.service-block__img-2 {
+  background-image: url("../img/service/service-1.png");
+}
+
+.service-block__img-3 {
+  background-image: url("../img/service/service-2.png");
+}
+
+.bold {
+  font-family: 'Museo Sans Bold', sans-serif;
+}
+
+.warranty {
+  padding-bottom: 228px;
+}
+
+.warranty-title {
+  font-size: 30px;
+  line-height: 45px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  text-align: center;
+}
+
+.warranty-block {
+  margin-top: 99px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.warranty-card {
+  width: 295px;
+  text-align: center;
+}
+
+.warranty-card__img {
+  width: 277px;
+  height: 360px;
+  margin: 41px auto;
+}
+
+.warranty-card__img-1 {
+  background-image: url("../img/warranty/warranty-1.jpg");
+}
+
+.warranty-card__img-2 {
+  background-image: url("../img/warranty/warranty-2.jpg");
+}
+
+.warranty-card__img-3 {
+  background-image: url("../img/warranty/warranty-3.jpg");
+}
+
+.warranty-card__discr {
+  font-size: 18px;
+  line-height: 24px;
+}
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1628,9 +1737,6 @@ img {
   }
   .stages-title {
     padding: 0 13px;
-  }
-  .map {
-    display: none;
   }
   .contacts-info {
     margin-top: 50px;

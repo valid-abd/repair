@@ -1,8 +1,9 @@
 .main
     background-color: $light-bg-color
-    padding: 60px 0
+    
     &-wrap
         display: flex
+        padding: 60px 0
     &-text
         flex-basis: 50%
         &__title
@@ -17,6 +18,10 @@
                 margin-top: 20px
     &-image
         flex-basis: 50%
+        z-index: 3
+        position: absolute
+        float: right
+        left: 49%
     &-advantages
         display: flex 
         flex-direction: column
