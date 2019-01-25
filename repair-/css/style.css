@@ -465,7 +465,8 @@ template {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
   z-index: 3;
-  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
   float: right;
   left: 49%;
 }
